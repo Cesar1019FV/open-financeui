@@ -1,0 +1,133 @@
+const data = {
+  "appName": "Finance",
+  "actions": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "filter": "Filter",
+    "search": "Search",
+    "reset": "Reset",
+    "export": "Export",
+    "markDone": "Mark done",
+    "pay": "Pay",
+    "contribute": "Contribute",
+    "update": "Update",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "viewAll": "View all",
+    "openCommand": "Open quick actions"
+  },
+  "status": {
+    "pending": "Pending",
+    "partial": "Partial payment",
+    "settled": "Settled",
+    "overdue": "Overdue",
+    "upcoming": "Upcoming",
+    "done": "Done",
+    "paid": "Paid",
+    "warning": "Warning",
+    "over": "Over budget",
+    "ok": "On track",
+    "completed": "Completed",
+    "profitable": "In profit",
+    "notProfitable": "At a loss"
+  },
+  "currency": { "USD": "USD", "CRC": "CRC" },
+  "months": {
+    "jan": "January", "feb": "February", "mar": "March", "apr": "April",
+    "may": "May", "jun": "June", "jul": "July", "aug": "August",
+    "sep": "September", "oct": "October", "nov": "November", "dec": "December"
+  },
+  "monthsShort": {
+    "jan": "Jan", "feb": "Feb", "mar": "Mar", "apr": "Apr",
+    "may": "May", "jun": "Jun", "jul": "Jul", "aug": "Aug",
+    "sep": "Sep", "oct": "Oct", "nov": "Nov", "dec": "Dec"
+  },
+  "kinds": {
+    "salary": "Salary",
+    "variable": "Variable",
+    "passive": "Passive",
+    "other": "Other",
+    "fixed": "Fixed",
+    "occasional": "Occasional"
+  },
+  "units": {
+    "installment": "Installment",
+    "installments": "Installments",
+    "remaining": "Remaining",
+    "paid": "Paid",
+    "total": "Total",
+    "of": "of"
+  },
+  "misc": {
+    "vs": "vs",
+    "previousMonth": "last month",
+    "thisMonth": "This month",
+    "lastMonth": "Last month",
+    "nextDue": "Next due",
+    "progress": "Progress",
+    "amount": "Amount",
+    "date": "Date",
+    "description": "Description",
+    "category": "Category",
+    "type": "Type",
+    "none": "None",
+    "loading": "Loading",
+    "all": "All",
+    "currency": "Currency",
+    "actions": "Actions",
+    "name": "Name",
+    "notes": "Notes",
+    "search": "Search",
+    "noResults": "No results"
+  },
+  "categories": {
+    "salary": "Salary",
+    "freelance": "Freelance",
+    "bonus": "Bonus",
+    "rental": "Rental",
+    "dividends": "Dividends",
+    "sales": "Sales",
+    "gift": "Gifts",
+    "otherIncome": "Other income",
+    "rent": "Rent",
+    "utilities": "Electricity",
+    "water": "Water",
+    "internet": "Internet",
+    "subscriptions": "Subscriptions",
+    "phone": "Phone",
+    "insurance": "Insurance",
+    "groceries": "Groceries",
+    "transport": "Transport",
+    "restaurant": "Restaurants",
+    "entertainment": "Entertainment",
+    "health": "Health",
+    "clothing": "Clothing",
+    "travel": "Travel",
+    "repairs": "Repairs",
+    "emergency": "Emergency",
+    "gifts": "Gifts"
+  },
+  "transactionType": { "income": "Income", "expense": "Expense" },
+  "recurrence": {
+    "none": "One-time",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "recurring": "Recurring"
+  },
+  "toast": {
+    "saved": "Saved",
+    "deleted": "Deleted",
+    "added": "Added",
+    "updated": "Updated",
+    "error": "Something went wrong"
+  }
+}
+export default data
+

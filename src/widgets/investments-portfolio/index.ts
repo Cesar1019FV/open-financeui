@@ -1,0 +1,1 @@
+export { InvestmentsPortfolio } from './ui/InvestmentsPortfolio'

@@ -1,0 +1,2 @@
+export type { SavingsGoal, CurrencyCode } from './model/types'
+export { goalProgress, isGoalComplete, monthsRemaining, suggestedMonthly, goalCurrentInCurrency, goalTargetInCurrency } from './model/selectors'

@@ -1,0 +1,133 @@
+const data = {
+  "appName": "Finance",
+  "actions": {
+    "add": "Agregar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "close": "Cerrar",
+    "filter": "Filtrar",
+    "search": "Buscar",
+    "reset": "Restablecer",
+    "export": "Exportar",
+    "markDone": "Marcar hecho",
+    "pay": "Pagar",
+    "contribute": "Contribuir",
+    "update": "Actualizar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "viewAll": "Ver todo",
+    "openCommand": "Abrir acciones rápidas"
+  },
+  "status": {
+    "pending": "Pendiente",
+    "partial": "Pago parcial",
+    "settled": "Saldado",
+    "overdue": "Vencido",
+    "upcoming": "Próximo",
+    "done": "Hecho",
+    "paid": "Pagado",
+    "warning": "Atención",
+    "over": "Excedido",
+    "ok": "Bien",
+    "completed": "Completada",
+    "profitable": "En ganancia",
+    "notProfitable": "En pérdida"
+  },
+  "currency": { "USD": "USD", "CRC": "CRC" },
+  "months": {
+    "jan": "Enero", "feb": "Febrero", "mar": "Marzo", "apr": "Abril",
+    "may": "Mayo", "jun": "Junio", "jul": "Julio", "aug": "Agosto",
+    "sep": "Septiembre", "oct": "Octubre", "nov": "Noviembre", "dec": "Diciembre"
+  },
+  "monthsShort": {
+    "jan": "Ene", "feb": "Feb", "mar": "Mar", "apr": "Abr",
+    "may": "May", "jun": "Jun", "jul": "Jul", "aug": "Ago",
+    "sep": "Sep", "oct": "Oct", "nov": "Nov", "dec": "Dic"
+  },
+  "kinds": {
+    "salary": "Salario",
+    "variable": "Variable",
+    "passive": "Pasivo",
+    "other": "Otro",
+    "fixed": "Fijo",
+    "occasional": "Ocasional"
+  },
+  "units": {
+    "installment": "Cuota",
+    "installments": "Cuotas",
+    "remaining": "Restante",
+    "paid": "Pagado",
+    "total": "Total",
+    "of": "de"
+  },
+  "misc": {
+    "vs": "vs",
+    "previousMonth": "mes anterior",
+    "thisMonth": "Este mes",
+    "lastMonth": "Mes pasado",
+    "nextDue": "Próximo vencimiento",
+    "progress": "Progreso",
+    "amount": "Monto",
+    "date": "Fecha",
+    "description": "Descripción",
+    "category": "Categoría",
+    "type": "Tipo",
+    "none": "Ninguno",
+    "loading": "Cargando",
+    "all": "Todos",
+    "currency": "Moneda",
+    "actions": "Acciones",
+    "name": "Nombre",
+    "notes": "Notas",
+    "search": "Buscar",
+    "noResults": "Sin resultados"
+  },
+  "categories": {
+    "salary": "Salario",
+    "freelance": "Freelance",
+    "bonus": "Bonos",
+    "rental": "Alquileres",
+    "dividends": "Dividendos",
+    "sales": "Ventas",
+    "gift": "Regalos",
+    "otherIncome": "Otros ingresos",
+    "rent": "Alquiler",
+    "utilities": "Electricidad",
+    "water": "Agua",
+    "internet": "Internet",
+    "subscriptions": "Suscripciones",
+    "phone": "Teléfono",
+    "insurance": "Seguros",
+    "groceries": "Supermercado",
+    "transport": "Transporte",
+    "restaurant": "Restaurantes",
+    "entertainment": "Entretenimiento",
+    "health": "Salud",
+    "clothing": "Ropa",
+    "travel": "Viajes",
+    "repairs": "Reparaciones",
+    "emergency": "Emergencias",
+    "gifts": "Regalos"
+  },
+  "transactionType": { "income": "Ingreso", "expense": "Gasto" },
+  "recurrence": {
+    "none": "No recurrente",
+    "weekly": "Semanal",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "recurring": "Recurrente"
+  },
+  "toast": {
+    "saved": "Guardado",
+    "deleted": "Eliminado",
+    "added": "Agregado",
+    "updated": "Actualizado",
+    "error": "Algo salió mal"
+  }
+}
+
+export default data

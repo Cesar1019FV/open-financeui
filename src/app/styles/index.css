@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-brand-50: #e9f7ef;
+  --color-brand-100: #c7ecd7;
+  --color-brand-300: #8fddb4;
+  --color-brand-500: #5ece9a;
+  --color-brand-600: #43b47e;
+  --color-brand-700: #1f7a54;
+  --color-brand-900: #0f3d2a;
+
+  --color-canvas: #ffffff;
+  --color-surface: #f6faf7;
+  --color-surface-2: #edf5f0;
+  --color-ink: #0f1a14;
+  --color-ink-muted: #5b6b62;
+  --color-line: #e3eae6;
+
+  --color-positive: #1f7a54;
+  --color-negative: #c0392b;
+  --color-warning: #c98a1a;
+  --color-info: #2e7cb8;
+
+  --radius-card: 16px;
+  --shadow-card: 0 1px 2px rgba(15, 26, 20, 0.04), 0 4px 16px rgba(15, 26, 20, 0.06);
+  --shadow-pop: 0 8px 32px rgba(15, 26, 20, 0.12);
+
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+
+  --animate-fade-in: fadeIn 0.3s var(--ease-fluid);
+  --animate-slide-up: slideUp 0.3s var(--ease-snappy);
+  --animate-ring-draw: ringDraw 1s var(--ease-fluid) forwards;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --color-canvas: #0a1410;
+    --color-surface: #11201a;
+    --color-surface-2: #182e25;
+    --color-ink: #ecfdf5;
+    --color-ink-muted: #94a39b;
+    --color-line: #1e3329;
+    --color-brand-500: #6ee7b7;
+    --color-brand-600: #34d399;
+    --color-brand-700: #34d399;
+    --color-brand-900: #0f3d2a;
+    --color-negative: #f87171;
+    --color-warning: #fbbf24;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.2s var(--ease-fluid), color 0.2s var(--ease-fluid);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .font-mono,
+  .tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::selection {
+    background: var(--color-brand-500);
+    color: var(--color-canvas);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-line);
+    border-radius: 999px;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ringDraw {
+  from { stroke-dashoffset: var(--ring-circumference); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
