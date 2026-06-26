@@ -1,0 +1,50 @@
+# Python runtime
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Env files
+.env
+.env.local
+!.env.example
+
+# SQLite database files
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Tools / caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+.dmypy/
+.pyre/
+.pytype/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

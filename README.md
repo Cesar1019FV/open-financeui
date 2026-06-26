@@ -25,8 +25,9 @@ Personal finance app to track income, expenses, debts, loans, savings goals, inv
 - **date-fns 4**
 - **SVG charts** (pie, bar, donut, sparkline) — no chart library
 - **SVG icons** — hand-rolled, no icon library
+- **FastAPI backend** (optional) in `backend/` — SQLite, JWT, Alembic
 
-## Getting started
+## Getting started (frontend)
 
 ```bash
 yarn install
@@ -40,6 +41,21 @@ yarn lint       # eslint .
 yarn build      # tsc -b && vite build
 yarn preview    # preview production build
 ```
+
+## Backend (optional)
+
+A FastAPI backend lives in `backend/` with user-scoped SQLite storage, JWT auth and Alembic migrations.
+
+```bash
+cd backend
+python -m venv .venv
+. .venv/Scripts/Activate.ps1   # or source .venv/bin/activate
+pip install -r requirements.txt
+alembic upgrade head
+uvicorn app.main:app --reload --port 8000
+```
+
+See [`backend/README.md`](./backend/README.md) and [`backend/docs/`](./backend/docs/) for details.
 
 ## Architecture
 
@@ -81,6 +97,17 @@ src/
 └── main.tsx
 docs/              # feature API contracts for backend integration
 AGENTS.md          # agent guidance for working in this repo
+```
+
+## Monorepo structure
+
+```
+open-financeui/
+├── src/             # React frontend (Vite + React 19 + Tailwind v4)
+├── backend/         # FastAPI backend (SQLite, JWT, Alembic)
+├── docs/            # Frontend API contracts for backend integration
+├── AGENTS.md        # Agent guidance
+└── README.md        # This file
 ```
 
 ## License
